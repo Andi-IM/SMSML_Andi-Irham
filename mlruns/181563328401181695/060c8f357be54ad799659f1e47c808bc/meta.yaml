@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/060c8f357be54ad799659f1e47c808bc/artifacts
+end_time: 1777540679657
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: 060c8f357be54ad799659f1e47c808bc
+run_name: bustling-hare-122
+run_uuid: 060c8f357be54ad799659f1e47c808bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777540425355
+status: 3
+tags: []
+user_id: runner
