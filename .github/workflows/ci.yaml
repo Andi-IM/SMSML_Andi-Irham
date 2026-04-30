@@ -36,7 +36,7 @@ jobs:
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
-          uv run python -m mlflow run . --experiment-name "Healthcare CVE Classification" --env-manager=local
+          uv run mlflow run . --experiment-name "Healthcare CVE Classification" --env-manager=local
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
