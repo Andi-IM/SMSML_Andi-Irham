@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/7336260cf25249b997fd17e3938fa974/artifacts
+end_time: 1777543137581
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: 7336260cf25249b997fd17e3938fa974
+run_name: traveling-moth-649
+run_uuid: 7336260cf25249b997fd17e3938fa974
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777543117863
+status: 3
+tags: []
+user_id: runner
