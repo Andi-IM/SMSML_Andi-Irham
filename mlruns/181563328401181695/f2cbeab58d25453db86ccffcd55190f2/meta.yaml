@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/f2cbeab58d25453db86ccffcd55190f2/artifacts
+end_time: 1777543368183
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: f2cbeab58d25453db86ccffcd55190f2
+run_name: able-foal-417
+run_uuid: f2cbeab58d25453db86ccffcd55190f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777543347346
+status: 3
+tags: []
+user_id: runner
