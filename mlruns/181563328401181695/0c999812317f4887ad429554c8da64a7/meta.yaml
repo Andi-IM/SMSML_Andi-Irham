@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/0c999812317f4887ad429554c8da64a7/artifacts
+end_time: 1777542341785
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: 0c999812317f4887ad429554c8da64a7
+run_name: trusting-perch-628
+run_uuid: 0c999812317f4887ad429554c8da64a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777542321739
+status: 3
+tags: []
+user_id: runner
