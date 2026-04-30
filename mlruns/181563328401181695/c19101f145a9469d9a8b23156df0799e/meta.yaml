@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/c19101f145a9469d9a8b23156df0799e/artifacts
+end_time: 1777539811364
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: c19101f145a9469d9a8b23156df0799e
+run_name: stately-asp-905
+run_uuid: c19101f145a9469d9a8b23156df0799e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777539681844
+status: 3
+tags: []
+user_id: runner
