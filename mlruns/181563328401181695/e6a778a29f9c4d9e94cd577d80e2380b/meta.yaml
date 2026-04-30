@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/e6a778a29f9c4d9e94cd577d80e2380b/artifacts
+end_time: 1777558871696
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: e6a778a29f9c4d9e94cd577d80e2380b
+run_name: learned-vole-599
+run_uuid: e6a778a29f9c4d9e94cd577d80e2380b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777558851601
+status: 3
+tags: []
+user_id: runner
