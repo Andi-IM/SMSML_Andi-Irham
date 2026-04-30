@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 # --- CONFIGURATION ---
 REPO_OWNER = 'Andi-IM'
 REPO_NAME = 'SMSML_Andi-Irham'
-LOCAL_URI = "http://127.0.0.1:5000"
+LOCAL_URI = "http://0.0.0.0:5000"
 EXPERIMENT_NAME = "Healthcare CVE Classification"
 
 
