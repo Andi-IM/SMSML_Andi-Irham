@@ -64,7 +64,8 @@ jobs:
           uv run mlflow models build-docker \
             -m "runs:/${{ steps.get_run_id.outputs.run_id }}/model" \
             -n "tmp-model-image" \
-            --install-mlflow
+            --install-mlflow \
+            --python-version 3.12.7
 
       - name: Tag Docker Image
         run: |
