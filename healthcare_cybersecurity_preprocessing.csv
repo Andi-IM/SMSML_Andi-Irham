@@ -1513,4 +1513,3 @@ CVE-2023-32781,0.3325891294137741,False,True,False,False,False,False,False,True,
 CVE-2023-28465,0.48697760793339423,False,True,False,False,False,False,False,True,False,False,HIGH
 CVE-2024-52807,1.0530686958386681,False,True,False,False,False,False,False,True,False,False,HIGH
 CVE-2025-24363,-1.2112956557824281,False,False,False,True,False,False,True,False,False,False,MEDIUM
-CVE-2025-53948,0.48697760793339423,False,True,False,False,False,False,False,True,False,False,HIGH
