@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/d73faf1642e5482bb8e57ce6a8b08a5a/artifacts
+end_time: 1777532591882
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: d73faf1642e5482bb8e57ce6a8b08a5a
+run_name: caring-carp-748
+run_uuid: d73faf1642e5482bb8e57ce6a8b08a5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777532509423
+status: 3
+tags: []
+user_id: andii

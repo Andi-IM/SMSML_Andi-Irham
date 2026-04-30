@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/0/1a589157caa548fb981377bb44d0c83d/artifacts
+end_time: 1777532492111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1a589157caa548fb981377bb44d0c83d
+run_name: amusing-lamb-250
+run_uuid: 1a589157caa548fb981377bb44d0c83d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777532415223
+status: 4
+tags: []
+user_id: andii

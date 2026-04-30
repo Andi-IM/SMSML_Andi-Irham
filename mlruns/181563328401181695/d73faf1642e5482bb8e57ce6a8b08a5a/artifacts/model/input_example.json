@@ -1,0 +1,1 @@
+{"columns": ["Attack_Vector_ADJACENT_NETWORK", "Attack_Vector_LOCAL", "Attack_Vector_NETWORK", "Attack_Vector_PHYSICAL", "Attack_Vector_UNKNOWN"], "data": [[false, false, true, false, false], [false, false, true, false, false], [false, false, true, false, false], [false, false, false, true, false], [false, false, true, false, false]]}
