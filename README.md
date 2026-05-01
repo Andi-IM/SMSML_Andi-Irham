@@ -1,6 +1,6 @@
 # Healthcare CVE Classification - CI/CD Pipeline
 
-![CI](https://github.com/Andi-IM/SMSML_Andi-Irham/actions/workflows/ci.yaml/badge.svg)
+[![CI](https://github.com/Andi-IM/SMSML_Andi-Irham/actions/workflows/ci.yml/badge.svg)](https://github.com/Andi-IM/SMSML_Andi-Irham/actions/workflows/ci.yml)
 
 Repositori ini adalah lingkungan otomatisasi (CI/CD environment) untuk memastikan model dapat diproduksi secara konsisten dan siap dideploy.
 
