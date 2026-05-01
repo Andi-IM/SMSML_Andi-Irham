@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/26bed2a77812447f95e15acf1bdf0a06/artifacts
+end_time: 1777559850938
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: 26bed2a77812447f95e15acf1bdf0a06
+run_name: salty-dove-889
+run_uuid: 26bed2a77812447f95e15acf1bdf0a06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777559832109
+status: 3
+tags: []
+user_id: runner
