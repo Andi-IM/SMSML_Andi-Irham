@@ -1,0 +1,11 @@
+digest: 0cad34c6
+name: dataset
+profile: '{"num_rows": 303, "num_elements": 1515}'
+schema: '{"mlflow_colspec": [{"type": "boolean", "name": "Attack_Vector_ADJACENT_NETWORK",
+  "required": true}, {"type": "boolean", "name": "Attack_Vector_LOCAL", "required":
+  true}, {"type": "boolean", "name": "Attack_Vector_NETWORK", "required": true}, {"type":
+  "boolean", "name": "Attack_Vector_PHYSICAL", "required": true}, {"type": "boolean",
+  "name": "Attack_Vector_UNKNOWN", "required": true}]}'
+source: '{"tags": {"mlflow.user": "runner", "mlflow.source.name": "modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "c65df5b773694c35d4ff829531310143c0c6f50f"}}'
+source_type: code
