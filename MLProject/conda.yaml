@@ -1,0 +1,16 @@
+name: healthcare-cve-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - mlflow==2.19.0
+      - pandas>=2.0.0
+      - scikit-learn>=1.0.0
+      - dagshub>=0.3.37
+      - joblib
+      - matplotlib
+      - numpy
+      - seaborn

@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  CSV_URL: "healthcare_cybersecurity_preprocessing.csv"
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,23 +17,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-        with:
-          version: "latest"
-          enable-cache: true
-
       - name: Set up Python
-        run: uv python install
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
       - name: Install dependencies
-        run: uv sync
+        run: |
+          python -m pip install --upgrade pip
+          pip install mlflow==2.19.0 dagshub pandas scikit-learn
 
       - name: Run MLflow training
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
-          uv run mlflow run . --experiment-name "Healthcare CVE Classification" --env-manager=local
+          mlflow run MLProject --experiment-name "Healthcare CVE Classification" --env-manager=local
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -56,12 +51,12 @@ jobs:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
           export MLFLOW_TRACKING_URI=file:./mlruns
-          RUN_ID=$(uv run python -c "import mlflow; print(mlflow.search_runs(experiment_names=['Healthcare CVE Classification']).iloc[0].run_id)")
+          RUN_ID=$(python -c "import mlflow; print(mlflow.search_runs(experiment_names=['Healthcare CVE Classification']).iloc[0].run_id)")
           echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
 
       - name: Build MLflow Model Image
         run: |
-          uv run python -c "import mlflow.models; mlflow.models.build_docker(model_uri='runs:/${{ steps.get_run_id.outputs.run_id }}/model', name='tmp-model-image', install_mlflow=True, env_manager='local', base_image='python:3.12-slim')"
+          mlflow models build-docker -m "runs:/${{ steps.get_run_id.outputs.run_id }}/model" -n "tmp-model-image" --install-mlflow
 
       - name: Tag Docker Image
         run: |
