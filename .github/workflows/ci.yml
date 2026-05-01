@@ -29,13 +29,17 @@ jobs:
 
       - name: Fix MLflow paths for Linux runner
         run: |
-          find mlruns -name "meta.yaml" -exec sed -i "s|artifact_uri: file:.*mlruns|artifact_uri: file:$(pwd)/mlruns|g" {} +
+          find mlruns -name "meta.yaml" -exec sed -i "s|file:.*mlruns|file:$(pwd)/mlruns|g" {} +
 
       - name: Run MLflow training
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
           mlflow run MLProject --experiment-name "Healthcare CVE Classification" --env-manager=local
+
+      - name: Fix paths again for newly created runs
+        run: |
+          find mlruns -name "meta.yaml" -exec sed -i "s|file:.*mlruns|file:$(pwd)/mlruns|g" {} +
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
