@@ -27,6 +27,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install mlflow==2.19.0 dagshub pandas scikit-learn
 
+      - name: Fix MLflow paths for Linux runner
+        run: |
+          find mlruns -name "meta.yaml" -exec sed -i "s|artifact_uri: file:.*mlruns|artifact_uri: file:$(pwd)/mlruns|g" {} +
+
       - name: Run MLflow training
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
@@ -50,13 +54,14 @@ jobs:
         env:
           DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
-          export MLFLOW_TRACKING_URI=file:./mlruns
-          RUN_ID=$(python -c "import mlflow; print(mlflow.search_runs(experiment_names=['Healthcare CVE Classification']).iloc[0].run_id)")
+          export MLFLOW_TRACKING_URI=file:$(pwd)/mlruns
+          RUN_ID=$(python -c "import mlflow; df = mlflow.search_runs(experiment_names=['Healthcare CVE Classification']); print(df.sort_values('start_time', ascending=False).iloc[0].run_id)")
           echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
 
       - name: Build MLflow Model Image
         run: |
-          mlflow models build-docker -m "runs:/${{ steps.get_run_id.outputs.run_id }}/model" -n "tmp-model-image" --install-mlflow
+          export MLFLOW_TRACKING_URI=file:$(pwd)/mlruns
+          mlflow models build-docker -m "runs:/${{ steps.get_run_id.outputs.run_id }}/model" -n "tmp-model-image" --install-mlflow --env-manager local
 
       - name: Tag Docker Image
         run: |
