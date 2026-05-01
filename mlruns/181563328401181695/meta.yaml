@@ -1,4 +1,4 @@
-artifact_location: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695
+artifact_location: file:/home/runner/work/SMSML_Andi-Irham/SMSML_Andi-Irham/mlruns/181563328401181695
 creation_time: 1777532491747
 experiment_id: '181563328401181695'
 last_update_time: 1777532491747

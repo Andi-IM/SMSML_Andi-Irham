@@ -1,0 +1,15 @@
+artifact_uri: file:/home/runner/work/SMSML_Andi-Irham/SMSML_Andi-Irham/mlruns/181563328401181695/2933d4f7716c487a864a2b0259254d0c/artifacts
+end_time: 1777622398916
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: 2933d4f7716c487a864a2b0259254d0c
+run_name: sedate-goose-526
+run_uuid: 2933d4f7716c487a864a2b0259254d0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777622382549
+status: 3
+tags: []
+user_id: runner

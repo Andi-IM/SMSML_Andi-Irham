@@ -1,0 +1,28 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 2.19.0
+model_size_bytes: 117357
+model_uuid: 090c656e65f34f91a9b1ccd36ca8bf6a
+run_id: 2933d4f7716c487a864a2b0259254d0c
+signature:
+  inputs: '[{"type": "boolean", "name": "Attack_Vector_ADJACENT_NETWORK", "required":
+    true}, {"type": "boolean", "name": "Attack_Vector_LOCAL", "required": true}, {"type":
+    "boolean", "name": "Attack_Vector_NETWORK", "required": true}, {"type": "boolean",
+    "name": "Attack_Vector_PHYSICAL", "required": true}, {"type": "boolean", "name":
+    "Attack_Vector_UNKNOWN", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2026-05-01 07:59:46.766531'
