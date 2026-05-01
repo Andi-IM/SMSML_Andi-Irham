@@ -1,0 +1,15 @@
+artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/a024cf95135c4f66b24a2b0f827f18ed/artifacts
+end_time: 1777621970933
+entry_point_name: ''
+experiment_id: '181563328401181695'
+lifecycle_stage: active
+run_id: a024cf95135c4f66b24a2b0f827f18ed
+run_name: adorable-duck-604
+run_uuid: a024cf95135c4f66b24a2b0f827f18ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777621951454
+status: 3
+tags: []
+user_id: runner

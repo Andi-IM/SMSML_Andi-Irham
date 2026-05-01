@@ -1,4 +1,4 @@
-artifact_uri: file:D:/01_Projects/SMSML_Andi-Irham/Workflow-CI/mlruns/181563328401181695/1761c92fa849492aa75e872d13e0ba4c/artifacts
+artifact_uri: file:/home/runner/work/SMSML_Andi-Irham/SMSML_Andi-Irham/mlruns/181563328401181695/1761c92fa849492aa75e872d13e0ba4c/artifacts
 end_time: 1777542682560
 entry_point_name: ''
 experiment_id: '181563328401181695'
